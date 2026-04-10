@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Pages Deployment Guide</title>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --card-bg: #161b22;
+            --text: #c9d1d9;
+            --accent: #58a6ff;
+            --border: #30363d;
+            --success: #238636;
+        }
+        body {
+            font-family: -apple-system, system-ui, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: var(--card-bg);
+            max-width: 700px;
+            width: 100%;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+        }
+        h1 { color: var(--accent); border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+        h2 { color: #8b949e; font-size: 1.2rem; margin-top: 25px; }
+        ul { list-style: none; padding: 0; }
+        li { 
+            background: rgba(255,255,255,0.03); 
+            margin: 8px 0; 
+            padding: 12px; 
+            border-radius: 6px; 
+            border: 1px solid var(--border);
+        }
+        code {
+            background: #21262d;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #ff7b72;
+        }
+        .status-badge {
+            display: inline-block;
+            background: var(--success);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="status-badge">✓ Ready for Root Deployment</div>
+    <h1>Deployment Guide</h1>
+    
+    <h2>Step 1: Setup</h2>
+    <ul>
+        <li>Sign up at <code>github.com</code></li>
+        <li>Create a repo named <code>username.github.io</code></li>
+    </ul>
+
+    <h2>Step 2: Deployment Settings</h2>
+    <ul>
+        <li>Go to <strong>Settings</strong> → <strong>Pages</strong></li>
+        <li>Under <strong>Build and deployment</strong>, set Source to: <code>Deploy from a branch</code></li>
+        <li>Branch: <code>main</code> (or your current branch)</li>
+        <li>Folder: <code>/ (root)</code></li>
+    </ul>
+
+    <h2>Step 3: Upload index.html</h2>
+    <ul>
+        <li>Add this file as <code>index.html</code> in the main folder.</li>
+        <li>Commit changes and wait ~60 seconds for the build to finish.</li>
+    </ul>
+</div>
+
+</body>
+</html>
