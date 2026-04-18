@@ -3,39 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Civil Engineering Portfolio | Freshman at UH Mānoa</title>
+    <title>Lailah Ashley | Civil Engineering</title>
+    <!-- Modern Font -->
+    <link href="https://googleapis.com" rel="stylesheet">
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; background-color: #f4f4f4; }
-        .container { max-width: 800px; margin: auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        .profile-area { display: flex; align-items: center; gap: 20px; border-bottom: 2px solid #004a20; padding-bottom: 20px; margin-bottom: 20px; }
-        .profile-photo { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #004a20; }
-        h1 { color: #004a20; margin: 0; } /* UH Manoa Green */
-        .btn { display: inline-block; background: #004a20; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px; }
-        .btn:hover { background: #027032; }
+        :root {
+            --uh-green: #004a20;
+            --soft-gray: #f8f9fa;
+            --text-main: #2d3436;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--soft-gray);
+            color: var(--text-main);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 700px;
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #e6eee9;
+            color: var(--uh-green);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            letter-spacing: 0.5px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0 0 1rem 0;
+            color: var(--uh-green);
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #636e72;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--uh-green);
+            color: white;
+            padding: 14px 32px;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(0, 74, 32, 0.2);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 74, 32, 0.3);
+        }
+
+        strong {
+            color: var(--text-main);
+        }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <section class="profile-area">
+    <span class="badge">FRESHMAN • UH MĀNOA</span>
+    <h1>Civil Engineering Portfolio</h1>
+    
+    <p>
+        Aloha! I am currently a freshman at the <strong>University of Hawaiʻi at Mānoa</strong> 
+        pursuing a degree in <strong>Civil Engineering</strong>. I am passionate about 
+        sustainable infrastructure and urban planning, and I am actively working to grow my 
+        <strong>engineering portfolio</strong> by documenting my academic projects and technical skill development.
+    </p>
 
-        <div>
-            <h1>Lailah Ashley</h1>
-            <p><strong>Civil Engineering Freshman</strong><br>University of Hawaiʻi at Mānoa</p>
-        </div>
-    </section>
-
-    <section id="about-me">
-        <h2>About Me</h2>
-        <p>
-            Aloha! I am currently a freshman at the <strong>University of Hawaiʻi at Mānoa</strong> pursuing a degree in <strong>Civil Engineering</strong>. 
-            I am passionate about sustainable infrastructure and urban planning, and I am actively working to grow my <strong>engineering portfolio</strong> 
-            by documenting my academic projects and technical skill development.
-        </p>
-        
-        <!-- Contact Button -->
-        <a href="mailto:your-email@hawaii.edu" class="btn">Contact Me</a>
-    </section>
+  
+    
+    <a href="contact.html" class="btn">Contact Me</a>
 </div>
 
 </body>
